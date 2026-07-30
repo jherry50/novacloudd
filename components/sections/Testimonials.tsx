@@ -21,11 +21,11 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-32 bg-slate-50">
+    <section className="py-32 bg-slate-50 dark:bg-slate-950">
 
       <div className="container-custom">
 
-        <h2 className="text-5xl font-bold text-center mb-20">
+        <h2 className="mb-20 text-center text-5xl font-bold text-slate-900 dark:text-white">
           Loved by teams worldwide
         </h2>
 
@@ -35,10 +35,10 @@ export default function Testimonials() {
 
             <div
               key={item.name}
-              className="rounded-3xl bg-white p-8 shadow-lg"
+              className="rounded-3xl bg-white p-8 shadow-lg dark:bg-slate-900"
             >
 
-              <p className="text-slate-600 leading-8 italic">
+              <p className="leading-8 italic text-slate-600 dark:text-slate-300">
                 "{item.quote}"
               </p>
 
@@ -48,7 +48,7 @@ export default function Testimonials() {
                   {item.name}
                 </h4>
 
-                <p className="text-slate-500">
+                <p className="text-slate-500 dark:text-slate-400">
                   {item.role}
                 </p>
 

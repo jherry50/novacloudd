@@ -24,11 +24,11 @@ export default function Contact() {
   }
 
   return (
-    <section className="py-32 bg-slate-50">
+    <section className="py-32 bg-slate-50 dark:bg-slate-950">
 
       <div className="container-custom max-w-3xl">
 
-        <h2 className="text-5xl font-bold text-center mb-12">
+        <h2 className="mb-12 text-center text-5xl font-bold text-slate-900 dark:text-white">
           Contact Sales
         </h2>
 
@@ -40,26 +40,26 @@ export default function Contact() {
           <input
             {...register("name")}
             placeholder="Full Name"
-            className="w-full rounded-xl border p-4"
+            className="w-full rounded-xl border border-slate-300 bg-white p-4 text-slate-900 outline-none transition focus:border-blue-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
           />
 
           <input
             {...register("email")}
             placeholder="Email"
-            className="w-full rounded-xl border p-4"
+            className="w-full rounded-xl border border-slate-300 bg-white p-4 text-slate-900 outline-none transition focus:border-blue-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
           />
 
           <input
             {...register("company")}
             placeholder="Company"
-            className="w-full rounded-xl border p-4"
+            className="w-full rounded-xl border border-slate-300 bg-white p-4 text-slate-900 outline-none transition focus:border-blue-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
           />
 
           <textarea
             {...register("message")}
             rows={5}
             placeholder="How can we help?"
-            className="w-full rounded-xl border p-4"
+            className="w-full rounded-xl border border-slate-300 bg-white p-4 text-slate-900 outline-none transition focus:border-blue-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
           />
 
           <Button

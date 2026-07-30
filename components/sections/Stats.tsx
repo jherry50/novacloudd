@@ -34,7 +34,7 @@ export default function Stats() {
   });
 
   return (
-    <section className="py-32 bg-slate-900 text-white">
+    <section className="py-32 bg-slate-900 text-white dark:bg-slate-950">
 
       <div
         ref={ref}

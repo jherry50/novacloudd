@@ -62,7 +62,7 @@ export default function Features() {
 
         <section
             id="features"
-            className="py-32 bg-slate-50"
+            className="py-32 bg-slate-50 dark:bg-slate-950"
         >
 
             <div className="container-custom">

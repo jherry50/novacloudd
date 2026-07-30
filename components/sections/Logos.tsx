@@ -14,7 +14,7 @@ export default function Logos() {
 
             <div className="container-custom">
 
-                <p className="text-center text-slate-500 mb-10">
+                <p className="mb-10 text-center text-slate-500 dark:text-slate-400">
                     Trusted by innovative companies worldwide
                 </p>
 
@@ -24,7 +24,7 @@ export default function Logos() {
 
                         <div
                             key={company}
-                            className="text-center text-xl font-bold text-slate-400 hover:text-slate-700 transition"
+                            className="text-center text-xl font-bold text-slate-400 transition hover:text-slate-700 dark:text-slate-500 dark:hover:text-slate-200"
                         >
                             {company}
                         </div>

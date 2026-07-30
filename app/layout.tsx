@@ -22,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${jakarta.variable} ${inter.variable} bg-white text-slate-900`}
+        className={`${jakarta.variable} ${inter.variable} min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)] transition-colors duration-300`}
       >
         {children}
       </body>

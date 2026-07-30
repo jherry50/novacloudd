@@ -8,21 +8,21 @@ export default function Dashboard() {
 
             <div className="container-custom">
 
-                <div className="rounded-[40px] bg-slate-900 p-8 shadow-2xl">
+                <div className="rounded-[40px] bg-slate-900 p-8 shadow-2xl dark:bg-slate-950">
 
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: .8 }}
                         viewport={{ once: true }}
-                        className="rounded-3xl bg-white p-8"
+                        className="rounded-3xl bg-white p-8 dark:bg-slate-900"
                     >
 
                         <div className="grid lg:grid-cols-3 gap-8">
 
-                            <div className="rounded-xl bg-blue-50 p-6">
+                            <div className="rounded-xl bg-blue-50 p-6 dark:bg-blue-950/40">
 
-                                <h4 className="font-semibold mb-6">
+                                <h4 className="mb-6 font-semibold text-slate-900 dark:text-white">
                                     Revenue
                                 </h4>
 
@@ -30,9 +30,9 @@ export default function Dashboard() {
 
                             </div>
 
-                            <div className="rounded-xl bg-slate-50 p-6">
+                            <div className="rounded-xl bg-slate-50 p-6 dark:bg-slate-800">
 
-                                <h4 className="font-semibold mb-6">
+                                <h4 className="mb-6 font-semibold text-slate-900 dark:text-white">
                                     Projects
                                 </h4>
 
@@ -50,9 +50,9 @@ export default function Dashboard() {
 
                             </div>
 
-                            <div className="rounded-xl bg-green-50 p-6">
+                            <div className="rounded-xl bg-green-50 p-6 dark:bg-green-950/30">
 
-                                <h4 className="font-semibold mb-6">
+                                <h4 className="mb-6 font-semibold text-slate-900 dark:text-white">
                                     Team
                                 </h4>
 

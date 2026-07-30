@@ -23,16 +23,18 @@ export default function FeatureCard({
             duration-300
             hover:-translate-y-2
             hover:shadow-2xl
+            dark:border-slate-700
+            dark:bg-slate-900
         ">
-            <div className="mb-6 text-blue-600">
+            <div className="mb-6 text-blue-600 dark:text-blue-400">
                 {icon}
             </div>
 
-            <h3 className="text-2xl font-semibold mb-3">
+            <h3 className="mb-3 text-2xl font-semibold text-slate-900 dark:text-white">
                 {title}
             </h3>
 
-            <p className="text-slate-600 leading-7">
+            <p className="leading-7 text-slate-600 dark:text-slate-300">
                 {description}
             </p>
         </div>

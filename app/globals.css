@@ -1,13 +1,36 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+  --border: #e2e8f0;
+  --text-muted: #475569;
+  --text-strong: #0f172a;
+}
+
+html.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --surface: #0f172a;
+  --surface-muted: #111827;
+  --border: #334155;
+  --text-muted: #cbd5e1;
+  --text-strong: #f8fafc;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-body);
-  background: #ffffff;
-  color: #0f172a;
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -25,12 +48,7 @@ h5 {
 }
 
 .gradient-text {
-  background: linear-gradient(
-      135deg,
-      #2563eb,
-      #7c3aed
-  );
-
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -38,6 +56,12 @@ h5 {
 
 .hero-bg {
   background:
-      radial-gradient(circle at top right,#dbeafe,transparent 40%),
-      radial-gradient(circle at bottom left,#ede9fe,transparent 40%);
+    radial-gradient(circle at top right, rgba(191, 219, 254, 0.8), transparent 40%),
+    radial-gradient(circle at bottom left, rgba(233, 213, 255, 0.8), transparent 40%);
+}
+
+html.dark .hero-bg {
+  background:
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.23), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(124, 58, 237, 0.24), transparent 35%);
 }

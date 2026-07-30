@@ -6,8 +6,8 @@ import DashboardPreview from "./DashboardPreview";
 
 export default function Hero() {
   return (
-    <section className="hero-bg py-28">
-      <div className="container-custom grid lg:grid-cols-2 gap-16 items-center">
+    <section className="hero-bg py-28 dark:text-slate-100">
+      <div className="container-custom grid items-center gap-16 lg:grid-cols-2">
 
         <motion.div
           initial={{ opacity: 0, y: 35 }}
@@ -18,14 +18,14 @@ export default function Hero() {
             Business Management Platform
           </p>
 
-          <h1 className="text-6xl font-bold leading-tight">
+          <h1 className="text-6xl font-bold leading-tight text-slate-900 dark:text-white">
             Manage Your Entire Business
             <span className="gradient-text">
               {" "}From One Platform.
             </span>
           </h1>
 
-          <p className="text-slate-600 mt-8 text-lg">
+          <p className="mt-8 text-lg text-slate-600 dark:text-slate-300">
             NovaCloud helps modern companies automate workflows,
             collaborate faster and make smarter business decisions.
           </p>

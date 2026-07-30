@@ -6,7 +6,7 @@ export default function CTA() {
 
       <div className="container-custom">
 
-        <div className="rounded-[40px] bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-20 text-center">
+        <div className="rounded-[40px] bg-gradient-to-r from-blue-600 to-indigo-600 p-20 text-center text-white">
 
           <h2 className="text-5xl font-bold">
             Ready to simplify your workflow?

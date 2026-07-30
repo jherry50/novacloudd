@@ -17,8 +17,7 @@ export default function Button({
 
         variant === "primary"
           ? "bg-blue-600 hover:bg-blue-700 text-white shadow-lg"
-
-          : "border border-slate-300 hover:bg-slate-100",
+          : "border border-slate-300 text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800",
 
         className
       )}

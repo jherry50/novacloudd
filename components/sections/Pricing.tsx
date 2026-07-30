@@ -66,11 +66,15 @@ export default function Pricing() {
                 transition
                 hover:-translate-y-2
                 hover:shadow-2xl
+                bg-white
+                text-slate-900
+                dark:bg-slate-900
+                dark:text-slate-100
 
                 ${
                   plan.featured
                     ? "border-blue-600 shadow-xl"
-                    : "border-slate-200"
+                    : "border-slate-200 dark:border-slate-700"
                 }
               `}
             >

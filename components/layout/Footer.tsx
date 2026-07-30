@@ -2,9 +2,9 @@ import { MirrorRectangular, Webhook, SmilePlus } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t py-20">
+    <footer className="border-t border-slate-200 py-20 dark:border-slate-800">
 
-      <div className="container-custom grid lg:grid-cols-4 gap-10">
+      <div className="container-custom grid gap-10 lg:grid-cols-4">
 
         <div>
 
@@ -12,7 +12,7 @@ export default function Footer() {
             NovaCloud
           </h2>
 
-          <p className="mt-6 text-slate-600">
+          <p className="mt-6 text-slate-600 dark:text-slate-300">
             Modern business software for growing companies.
           </p>
 
@@ -24,7 +24,7 @@ export default function Footer() {
             Product
           </h4>
 
-          <div className="space-y-2">
+          <div className="space-y-2 text-slate-600 dark:text-slate-300">
 
             <a href="#">Features</a><br/>
             <a href="#">Pricing</a><br/>
@@ -40,7 +40,7 @@ export default function Footer() {
             Company
           </h4>
 
-          <div className="space-y-2">
+          <div className="space-y-2 text-slate-600 dark:text-slate-300">
 
             <a href="#">About</a><br/>
             <a href="#">Careers</a><br/>

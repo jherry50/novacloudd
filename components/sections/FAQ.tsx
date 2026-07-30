@@ -25,7 +25,7 @@ export default function FAQ() {
     <section id="faq" className="py-32">
       <div className="container-custom max-w-4xl">
 
-        <h2 className="text-center text-5xl font-bold mb-16">
+        <h2 className="mb-16 text-center text-5xl font-bold text-slate-900 dark:text-white">
           Frequently Asked Questions
         </h2>
 
@@ -39,9 +39,9 @@ export default function FAQ() {
               onClick={() =>
                 setOpen(open === index ? null : index)
               }
-              className="w-full flex justify-between items-center"
+              className="flex w-full items-center justify-between"
             >
-              <span className="font-semibold text-left">
+              <span className="text-left font-semibold text-slate-900 dark:text-white">
                 {faq.q}
               </span>
 
@@ -55,7 +55,7 @@ export default function FAQ() {
 
             {open === index && (
 
-              <p className="mt-5 text-slate-600 leading-7">
+              <p className="mt-5 leading-7 text-slate-600 dark:text-slate-300">
                 {faq.a}
               </p>
 
