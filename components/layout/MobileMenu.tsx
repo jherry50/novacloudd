@@ -3,6 +3,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { Menu, X } from "lucide-react";
 import Button from "../ui/Button";
+import Logo from "@/components/ui/Logo";
 
 const links = [
   { href: "#features", label: "Features" },
@@ -31,7 +32,7 @@ export default function MobileMenu() {
           <div className="mb-12 flex items-center justify-between">
 
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-              NovaCloud
+              <Logo/>
             </h2>
 
             <Dialog.Close asChild>

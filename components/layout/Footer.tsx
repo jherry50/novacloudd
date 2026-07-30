@@ -1,4 +1,5 @@
 import { MirrorRectangular, Webhook, SmilePlus } from "lucide-react";
+import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <div>
 
           <h2 className="font-bold text-2xl gradient-text">
-            NovaCloud
+            <Logo/>
           </h2>
 
           <p className="mt-6 text-slate-600 dark:text-slate-300">

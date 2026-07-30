@@ -3,6 +3,7 @@
 import Button from "../ui/Button";
 import ThemeToggle from "../ui/ThemeToggle";
 import MobileMenu from "./MobileMenu";
+import Logo from "@/components/ui/Logo";
 
 const links = [
   { href: "#features", label: "Features" },
@@ -17,7 +18,7 @@ export default function Navbar() {
       <div className="container-custom flex h-20 items-center justify-between">
 
         <h2 className="text-2xl font-bold gradient-text">
-          NovaCloud
+          <Logo/>
         </h2>
 
         <nav className="hidden gap-8 md:flex">
